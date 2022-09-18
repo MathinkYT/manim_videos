@@ -82,3 +82,17 @@ class InThisVideo(Scene):
         titulo = Text("En este video veremos", weight=BOLD).to_edge(UP)
         rec = ScreenRectangle(stroke_color=WHITE, fill_color=BLACK, fill_opacity=1, height=5)
         self.add(titulo, rec)
+
+
+class Outro(Scene):
+    def construct(self):
+        titulo = Text("¡Gracias por ver!", weight=BOLD)
+        titulo.to_edge(UP)
+        codigo_fuente = Text(
+            "Código fuente: https://github.com/MathinkYT/manim_videos",
+            t2c={"https://github.com/MathinkYT/manim_videos": YELLOW},
+            font_size=24
+        )
+        codigo_fuente.to_edge(DOWN)
+        self.play(GrowFromCenter(titulo), Write(codigo_fuente))
+        self.wait(18)

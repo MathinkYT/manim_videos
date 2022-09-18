@@ -2,4 +2,4 @@
 
 ## Lista de videos con sus archivos Python
 
-* [Demostración visual] Teorema de Pitágoras: [demo_teorema_pitagoras.py](/demo_teorema_pitagoras.py)
+* [Manim Community] Demostración visual teorema de Pitágoras #shorts: [demo_teorema_pitagoras.py](/demo_teorema_pitagoras.py)
