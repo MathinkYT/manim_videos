@@ -1,7 +1,27 @@
 from manim import *
+import math
+import decimal
 
 
 Text.set_default(font="Orbitron")
+
+
+
+def round_down(value, decimals):
+    if value == int(value):
+        return int(value)
+        
+    with decimal.localcontext() as ctx:
+        d = decimal.Decimal(value)
+        ctx.rounding = decimal.ROUND_DOWN
+        return round(d, decimals)
+        
+
+class Car(SVGMobject):
+    def __init__(self, color=GRAY):
+        super().__init__("_car.svg")
+        self.set_color(color)
+        self.scale(0.25)
 
 
 class Logo(VGroup):
