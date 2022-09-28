@@ -96,6 +96,14 @@ class IntroVertical(Scene):
         self.wait()
 
 
+class InThePreviousVideo(Scene):
+    def construct(self):
+        self.camera.background_color = "#333333"
+        titulo = Text("En el video anterior", weight=BOLD).to_edge(UP)
+        rec = ScreenRectangle(stroke_color=WHITE, fill_color=BLACK, fill_opacity=1, height=5)
+        self.add(titulo, rec)
+
+
 class InThisVideo(Scene):
     def construct(self):
         self.camera.background_color = "#333333"
