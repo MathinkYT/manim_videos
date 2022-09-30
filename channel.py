@@ -6,7 +6,6 @@ import decimal
 Text.set_default(font="Orbitron")
 
 
-
 def round_down(value, decimals):
     if value == int(value):
         return int(value)

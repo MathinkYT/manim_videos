@@ -52,7 +52,7 @@ class ProofGaussianSum(Scene):
         general_sum = MathTex(r"S = 1 + 2 + 3 + 4 + \ldots + n").next_to(suma_dificil, DOWN)
         self.play(Write(general_sum))
         self.wait()
-        new_general_sum = MathTex(r"S = \sum_{i = 1}^n k").next_to(suma_dificil, DOWN)
+        new_general_sum = MathTex(r"S = \sum_{k = 1}^n k").next_to(suma_dificil, DOWN)
         self.play(Transform(general_sum, new_general_sum))
         self.wait()
 
@@ -69,7 +69,7 @@ class ProofGaussianSum(Scene):
         self.play(VGroup(shape, br1, tex1).animate.scale(0.5).to_edge(LEFT))
         
         shape2 = GaussianSumShape(6, side_length=0.7).scale(0.5).to_edge(RIGHT)
-        double_general_sum = MathTex(r"2S = 2\sum_{i = 1}^n k").next_to(suma_dificil, DOWN)
+        double_general_sum = MathTex(r"2S = 2\sum_{k = 1}^n k").next_to(suma_dificil, DOWN)
         self.play(ReplacementTransform(shape.copy(), shape2), Transform(general_sum, double_general_sum))
         self.play(Rotate(shape2, 180 * DEGREES))
         self.play(shape2.animate.move_to(shape[-1][-1].get_corner(UR), aligned_edge=DR))
