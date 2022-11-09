@@ -1,19 +1,43 @@
 from manim import *
 import math
-import decimal
 
 
+MathTex.set_default(
+    tex_template=TexTemplate(
+        preamble=r"""
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{relsize}
+\usepackage{textcomp}
+\usepackage{mathrsfs}
+\usepackage{calligra}
+\usepackage{wasysym}
+\usepackage{ragged2e}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = * }
+\linespread{1}
+"""
+    )
+)
 Text.set_default(font="Orbitron")
 
 
 def round_down(value, decimals):
-    if value == int(value):
-        return int(value)
-        
-    with decimal.localcontext() as ctx:
-        d = decimal.Decimal(value)
-        ctx.rounding = decimal.ROUND_DOWN
-        return round(d, decimals)
+    result = round(value, decimals)
+    
+    if result == int(result):
+        return int(result)
+    
+    return result
         
 
 class Car(SVGMobject):

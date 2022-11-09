@@ -1,6 +1,6 @@
 media
 __pycache__
 venv
-utils_*
 output_*
 audio_*
+client_secrets.json

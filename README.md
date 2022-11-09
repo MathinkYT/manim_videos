@@ -6,3 +6,4 @@
 * Aprendiendo cálculo - Parte 1: Introducción a la derivada: [derivada.py](/derivada.py)
 * [Manim Community] Cómo sumar los primeros n números naturales rápido #shorts: [gauss.py](/gauss.py)
 * [Manim Community] Demostración visual del área de un círculo #shorts [demo_area_circulo.py](/demo_area_circulo.py)
+* [Manim Community] Método de Montecarlo para aproximar π [montecarlo.py](/montecarlo.py)
