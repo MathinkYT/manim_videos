@@ -7,3 +7,4 @@
 * [Manim Community] Cómo sumar los primeros n números naturales rápido #shorts: [gauss.py](/gauss.py)
 * [Manim Community] Demostración visual del área de un círculo #shorts [demo_area_circulo.py](/demo_area_circulo.py)
 * [Manim Community] Método de Montecarlo para aproximar π [montecarlo.py](/montecarlo.py)
+* ¡Aproximar logaritmos inexactos (irracionales) sin calculadora! [aproximar_logaritmos.py](/aproximar_logaritmos.py)
